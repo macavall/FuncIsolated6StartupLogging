@@ -31,3 +31,4 @@ internal class Program
     }
 }
 ```
+![image](https://github.com/macavall/FuncIsolated6StartupLogging/assets/43223084/16c7c743-5987-4e75-b393-cef172b05a49)
