@@ -31,4 +31,6 @@ internal class Program
     }
 }
 ```
+
+Checking App Insights for the logging entered in the `Program.cs` file resulted App Insights logging the message
 ![image](https://github.com/macavall/FuncIsolated6StartupLogging/assets/43223084/16c7c743-5987-4e75-b393-cef172b05a49)
