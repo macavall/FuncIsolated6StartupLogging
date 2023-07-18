@@ -3,7 +3,10 @@
     "httpscale": {
       "commandName": "Project",
       "commandLineArgs": "--port 7066",
-      "launchBrowser": false
+      "environmentVariables": {
+        "hosturi": "http://localhost:7066/api/http1",
+        "APPINSIGHTS_INSTRUMENTATIONKEY": "254690c9-9b53-4dda-993f-def139a99334"
+      }
     }
   }
 }

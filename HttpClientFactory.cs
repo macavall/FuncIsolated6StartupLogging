@@ -3,14 +3,20 @@
 public class HttpClientFactory : IHttpClientFactory
 {
     private readonly IHttpClientFactory _httpClientFactory;
+    public HttpClient client;
 
     public HttpClientFactory(IHttpClientFactory httpClientFactory)
     {
         _httpClientFactory = httpClientFactory;
     }
 
-    public HttpClient CreateClient(string name)
+    HttpClient IHttpClientFactory.CreateClient(string name)
     {
-        return _httpClientFactory.CreateClient(name);
+        if (client == null)
+        {
+            client = _httpClientFactory.CreateClient(name);
+        }
+
+        return client;
     }
 }
